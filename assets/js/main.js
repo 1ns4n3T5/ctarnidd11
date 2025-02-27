@@ -213,3 +213,8 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function redirectToTelegram() {
+            alert("Redirecting to Telegram...");
+            window.location.href = "https://t.me/+sXVIQpuhHY84ZTQ1"; // Replace with actual Telegram link
+        }
