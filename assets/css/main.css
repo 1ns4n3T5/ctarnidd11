@@ -11,6 +11,9 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@import "tailwindcss";
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Montserrat",  sans-serif;
@@ -823,6 +826,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -856,153 +860,7 @@ section,
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
-.clients .swiper {
-  padding: 10px 0;
-}
 
-.clients .swiper-wrapper {
-  height: auto;
-}
-
-.clients .swiper-slide img {
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-  transform: scale(1.1);
-}
-
-/*--------------------------------------------------------------
-# Featured Services Section
---------------------------------------------------------------*/
-.featured-services .card {
-  background-color: var(--background-color);
-  color: var(--default-color);
-  border: none;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  min-height: 500px;
-}
-
-.featured-services .card:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, 0.9) 75%);
-  z-index: 2;
-}
-
-.featured-services .card img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.featured-services .card .card-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  padding: 30px;
-}
-
-.featured-services .card .card-body h3 {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 0px;
-  padding-left: 10px;
-  border-left: 3px solid var(--accent-color);
-}
-
-.featured-services .card .card-body h3 a {
-  color: var(--contrast-color);
-}
-
-.featured-services .card .card-body .card-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.5s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.featured-services .card .card-body .card-content p {
-  font-size: 15px;
-  padding-top: 10px;
-  margin-bottom: 0;
-  overflow: hidden;
-  color: var(--contrast-color);
-}
-
-.featured-services .card:hover .card-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Call To Action Section
---------------------------------------------------------------*/
-.call-to-action {
-  padding: 120px 0;
-  position: relative;
-  clip-path: inset(0);
-}
-
-.call-to-action img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.call-to-action .container {
-  position: relative;
-  z-index: 3;
-}
-
-.call-to-action h3 {
-  color: var(--default-color);
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.call-to-action p {
-  color: var(--default-color);
-}
-
-.call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
-}
-
-.call-to-action .cta-btn:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
 .services .service-item {
   position: relative;
   padding-top: 40px;
@@ -1801,9 +1659,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/*.starter-section {
+  /* Add your styles here 
+} */
 
 /*--------------------------------------------------------------
 # Blog Posts Section
@@ -2468,4 +2326,22 @@ section,
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+.custom-page{
+  background:linear-gradient(135deg, rgba(8, 121, 115, 0.7),rgba(119, 7, 22, 0.7)), 
+  url('../img/test2.jpg');
+}
+.theme{
+  background:linear-gradient(135deg, rgba(8, 121, 115, 0.7),rgba(119, 7, 22, 0.7));
+}
+.shadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.bg-theme{
+  background:linear-gradient(135deg,rgba(119, 7, 22, 0.7), rgba(8, 121, 115, 0.7)), 
+  url('../img/test2.jpg');
+  background-repeat: repeat-y;
+
 }

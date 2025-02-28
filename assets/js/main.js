@@ -1,11 +1,3 @@
-/**
-* Template Name: Knight
-* Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
-* Updated: Oct 16 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -214,7 +206,20 @@
 
 })();
 
+
 function redirectToTelegram() {
-            alert("Redirecting to Telegram...");
-            window.location.href = "https://t.me/+sXVIQpuhHY84ZTQ1"; // Replace with actual Telegram link
-        }
+  Swal.fire({
+      title: "Contact Us",
+      text: "Redirect to our Telegram?",
+      icon: "info",
+      showCancelButton: true,
+      confirmButtonText: "OK",
+      cancelButtonText: "Cancel"
+  }).then((result) => {
+      if (result.isConfirmed) {
+          window.location.href = "https://t.me/+sXVIQpuhHY84ZTQ1"; // Replace with your Telegram link
+      }
+  });
+}
+
+
