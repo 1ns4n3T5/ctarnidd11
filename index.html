@@ -28,12 +28,18 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .hidden-header {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
 
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top ">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -129,12 +135,12 @@
     </section><!-- /About Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section service-bg">
+    <section id="services" class="services section service custom-page card-hover">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="">Services</h2>
-        <p>In the swirling tides of the digital ocean, <i><b>Ctarnidd11</b></i> stands as your unwavering ally. Our team
+        <h2 class="text-white">Services</h2>
+        <p class="text-white">In the swirling tides of the digital ocean, <i><b>Ctarnidd11</b></i> stands as your unwavering ally. Our team
           of Kraken Slayers combines skill,
           creativity, and tenacity to conquer the unknown and deliver cutting-edge solutions across:</p>
       </div><!-- End Section Title -->
@@ -143,12 +149,12 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 theme " data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-clouds"></i></div>
-              <div>
-                <h4 class="title"><a href="services/cloud.html" class="stretched-link">Cloud Virtual Servers</a></h4>
-                <p class="description">Experience unmatched flexibility with our cloud servers, available as
+              <div class="icon flex-shrink-0"><i class="bi bi-clouds text-white"></i></div>
+              <div class="card-hover">
+                <h4 class="title"><a href="services/service-details.html" class="stretched-link">Cloud Virtual Servers</a></h4>
+                <p class="description text-white">Experience unmatched flexibility with our cloud servers, available as
                   self-managed or fully supported options, complete with advanced network devices, 99.99% uptime, and
                   round-the-clock support.</p>
               </div>
@@ -156,61 +162,61 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 theme" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+              <div class="icon flex-shrink-2"><i class="bi bi-diagram-3 text-white"></i></div>
               <div>
-                <h4 class="title"><a href="services/Infra.html" class="stretched-link">IT/Infrastructure Services</a>
+                <h4 class="title"><a href="services/service-details.html#infra" class="stretched-link">IT/Infrastructure Services</a>
                 </h4>
-                <p class="description">Elevate your operations with our IT and Infrastructure solutions—featuring expert
+                <p class="description text-white">Elevate your operations with our IT and Infrastructure solutions—featuring expert
                   Linux server administration, robust security, reliable backups, disaster recovery, and 24/7 monitoring
                   with customized SLAs.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 theme" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-box"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-box text-white"></i></div>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Developing Services</a></h4>
-                <p class="description">Transform your digital presence with custom website and application development,
+                <p class="description text-white">Transform your digital presence with custom website and application development,
                   including tailored web solutions, e-commerce platforms, and mobile apps designed to meet your unique
                   business needs.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-6 theme" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-shield-shaded"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-shield-shaded text-white"></i></div>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Cyber Security Services</a></h4>
-                <p class="description">Protect your assets with our comprehensive cybersecurity suite, offering 24/7 SOC
+                <p class="description text-white">Protect your assets with our comprehensive cybersecurity suite, offering 24/7 SOC
                   monitoring, rapid incident response, vulnerability assessments, endpoint protection, and strategic
                   security planning.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-6  theme" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-database text-white"></i></div>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Domain Registration</a></h4>
-                <p class="description">Secure your online identity with our domain services—register popular domains
+                <p class="description text-white">Secure your online identity with our domain services—register popular domains
                   like ".com.mm" and ".net.mm," manage DNS seamlessly, and benefit from integrated web/email solutions,
                   robust DDoS protection, and expert consulting.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+          <div class="col-lg-6 theme" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week text-white"></i></div>
               <div>
                 <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                <p class="description text-white">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                   soluta nobis est eligendi</p>
               </div>
             </div>
@@ -915,8 +921,10 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
+   
   <script src="assets/js/main.js"></script>
   <script src="assets/js/alert.js"></script>
+  <script src="assets/js/nav.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
