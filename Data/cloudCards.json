@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Virtual Servers",
+      "content": "We provide rental service for cloud servers for our customers' websites or services where they can choose to manage them by themselves or let our professional team handle it.",
+      "icon": "bi-cloud",
+      "iconColor": "text-primary",
+      "aosDelay": 0
+    },
+    {
+      "title": "Cloud Network Devices",
+      "content": "Enhance your digital infrastructure with customized network devices featuring state-of-the-art load balancers, VPNs, and comprehensive security solutions.",
+      "icon": "bi-hdd-network",
+      "iconColor": "text-success",
+      "aosDelay": 100
+    },
+    {
+      "title": "System Administration",
+      "content": "Benefit from our dedicated Linux system administration services that ensure flawless server deployment, seamless installation, and expert configuration.",
+      "icon": "bi-terminal",
+      "iconColor": "text-warning",
+      "aosDelay": 200
+    },
+    {
+      "title": "99.99% Uptime",
+      "content": "Enjoy peace of mind with our industry-leading 99.99% uptime guarantee, ensuring continuous and reliable operation of your services.",
+      "icon": "bi-clock-history",
+      "iconColor": "text-danger",
+      "aosDelay": 300
+    },
+    {
+      "title": "24/7 Monitored",
+      "content": "Stay ahead with round-the-clock monitoring where our team detects and addresses issues immediately to keep your operations secure.",
+      "icon": "bi-shield-check",
+      "iconColor": "text-info",
+      "aosDelay": 400
+    }
+  ]
+  

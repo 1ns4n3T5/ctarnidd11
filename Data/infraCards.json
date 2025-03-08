@@ -1,0 +1,52 @@
+[
+    {
+      "title": "Linux Server Administration",
+      "content": "Comprehensive administration services including installation, configuration, management, and maintenance for both physical and cloud servers.",
+      "icon": "bi-terminal",
+      "iconColor": "text-success",
+      "aosDelay": 0
+    },
+    {
+      "title": "Server Security",
+      "content": "Robust protection at the OS and service levels. We configure firewalls and security measures to prevent unauthorized access.",
+      "icon": "bi-shield-lock",
+      "iconColor": "text-danger",
+      "aosDelay": 100
+    },
+    {
+      "title": "Regular Data Backup",
+      "content": "Secure and efficient backup solutions to protect your valuable data, ensuring rapid recovery when needed.",
+      "icon": "bi-hdd",
+      "iconColor": "text-primary",
+      "aosDelay": 200
+    },
+    {
+      "title": "Infrastructure Planning & Implementation",
+      "content": "Scalable, future-ready infrastructure design and implementation that efficiently handles high traffic loads.",
+      "icon": "bi-diagram-3",
+      "iconColor": "text-warning",
+      "aosDelay": 300
+    },
+    {
+      "title": "Service Level Agreement (SLA)",
+      "content": "All our services come with a comprehensive SLA to guarantee reliability and performance.",
+      "icon": "bi-file-earmark-text",
+      "iconColor": "text-info",
+      "aosDelay": 400
+    },
+    {
+      "title": "Infrastructure Monitoring",
+      "content": "Our 24/7 Network Operations Center continuously monitors system performance and network health with real-time alerts.",
+      "icon": "bi-speedometer2",
+      "iconColor": "text-secondary",
+      "aosDelay": 500
+    },
+    {
+      "title": "Disaster Recovery",
+      "content": "Expert disaster recovery planning and implementation ensuring minimal downtime for your online services.",
+      "icon": "bi-life-preserver",
+      "iconColor": "text-dark",
+      "aosDelay": 600
+    }
+  ]
+  

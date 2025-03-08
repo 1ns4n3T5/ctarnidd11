@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Website/Application Development",
+      "content": "We build modern websites and web applications that help your business grow with scalable, robust solutions.",
+      "icon": "bi-code-slash",
+      "iconColor": "text-primary",
+      "aosDelay": 0
+    },
+    {
+      "title": "Website/Application Maintenance",
+      "content": "We keep your site and apps running smoothly with regular updates and support for both minor tweaks and major changes.",
+      "icon": "bi-tools",
+      "iconColor": "text-secondary",
+      "aosDelay": 100
+    },
+    {
+      "title": "Customized Websites",
+      "content": "We design custom web applications tailored to your needs—from e-commerce to back-office systems—so you stand out.",
+      "icon": "bi-sliders",
+      "iconColor": "text-warning",
+      "aosDelay": 200
+    },
+    {
+      "title": "Mobile Application Development",
+      "content": "We create mobile apps for Android and iOS, whether native or hybrid, ensuring your business stays connected on any device.",
+      "icon": "bi-phone",
+      "iconColor": "text-success",
+      "aosDelay": 300
+    },
+    {
+      "title": "Opensource Codes",
+      "content": "We offer source codes under a separate agreement, giving you full control over your project for easy customization.",
+      "icon": "bi-github",
+      "iconColor": "text-dark",
+      "aosDelay": 400
+    },
+    {
+      "title": "SLA & Milestones",
+      "content": "Our projects follow clear milestones and Service Level Agreements to ensure timely, quality delivery every time.",
+      "icon": "bi-card-checklist",
+      "iconColor": "text-danger",
+      "aosDelay": 500
+    }
+  ]
+  

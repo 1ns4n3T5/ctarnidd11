@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Fedora",
+      "versions": ["Fedora 37 x64", "Fedora 38 x64"],
+      "image": "../assets/img/cards/fedora.png"
+    },
+    {
+      "name": "Debian",
+      "versions": ["Debian 10 x64", "Debian 11 x64", "Debian 12 x64"],
+      "image": "../assets/img/cards/debian.png"
+    },
+    {
+      "name": "Ubuntu",
+      "versions": ["Ubuntu 20.04 LTS x64", "Ubuntu 22.04 LTS x64", "Ubuntu 23.04 x64"],
+      "image": "../assets/img/cards/ubuntu.png"
+    },
+    {
+      "name": "CentOS",
+      "versions": ["CentOS Stream 8 x64", "CentOS Stream 9 x64"],
+      "image": "../assets/img/cards/centos.png"
+    }
+  ]
+  

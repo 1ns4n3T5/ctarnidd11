@@ -103,13 +103,13 @@ AOS.init({
   function generateCard(cardData) {
     return `
       <div class="col-md-4 mb-3 mt-5" data-aos="fade-up" data-aos-delay="${cardData.aosDelay}">
-        <div class="card h-100 shadow theme card-hover">
+        <div class="card h-100 shadow card-hover">
           <div class="icon-circle">
             <i class="bi ${cardData.icon} ${cardData.iconColor} display-5"></i>
           </div>
           <div class="card-body">
-            <h5 class="card-title text-white mt-5">${cardData.title}</h5>
-            <p class="card-text text-white">${cardData.content}</p>
+            <h5 class="card-title text-black mt-5">${cardData.title}</h5>
+            <p class="card-text text-black">${cardData.content}</p>
           </div>
         </div>
       </div>
@@ -129,49 +129,190 @@ AOS.init({
   });
   
 
-  //supported-os
-  // 1) Define an array for all your OS data
+  
 
-const osData = [
+
+
+
+//Developing Services 
+
+const devServices = [
   {
-    name: "Fedora",
-    versions: ["Fedora 37 x64", "Fedora 38 x64"],
-    image: "../assets/img/cards/fedora.png"
+    title: "Website/Application Development",
+    content: "We build modern websites and web applications that help your business grow with scalable, robust solutions.",
+    icon: "bi-code-slash",
+    iconColor: "text-primary",
+    aosDelay: 0
   },
   {
-    name: "Debian",
-    versions: ["Debian 10 x64", "Debian 11 x64", "Debian 12 x64"],
-    image: "../assets/img/cards/debian.png"
+    title: "Website/Application Maintenance",
+    content: "We keep your site and apps running smoothly with regular updates and support for both minor tweaks and major changes.",
+    icon: "bi-tools",
+    iconColor: "text-secondary",
+    aosDelay: 100
   },
   {
-    name: "Ubuntu",
-    versions: ["Ubuntu 20.04 LTS x64", "Ubuntu 22.04 LTS x64", "Ubuntu 23.04 x64"],
-    image: "../assets/img/cards/ubuntu.png"
+    title: "Customized Websites",
+    content: "We design custom web applications tailored to your needs—from e-commerce to back-office systems—so you stand out.",
+    icon: "bi-sliders",
+    iconColor: "text-warning",
+    aosDelay: 200
   },
   {
-    name: "CentOS",
-    versions: ["CentOS Stream 8 x64", "CentOS Stream 9 x64"],
-    image: "../assets/img/cards/centos.png"
+    title: "Mobile Application Development",
+    content: "We create mobile apps for Android and iOS, whether native or hybrid, ensuring your business stays connected on any device.",
+    icon: "bi-phone",
+    iconColor: "text-success",
+    aosDelay: 300
+  },
+  {
+    title: "Opensource Codes",
+    content: "We offer source codes under a separate agreement, giving you full control over your project for easy customization.",
+    icon: "bi-github",
+    iconColor: "text-dark",
+    aosDelay: 400
+  },
+  {
+    title: "SLA & Milestones",
+    content: "Our projects follow clear milestones and Service Level Agreements to ensure timely, quality delivery every time.",
+    icon: "bi-card-checklist",
+    iconColor: "text-danger",
+    aosDelay: 500
   }
 ];
 
-// 2) Function to build each card’s HTML
-function createCard(os) {
+// Helper function to create a card's HTML using Bootstrap classes
+function createDevCard(service) {
   return `
-    <div class="col">
-      <div class="card text-center p-3 h-100 shadow-sm theme card-hover">
-        <img src="${os.image}" alt="${os.name}" class="os-img">
+    <div class="col gy-5">
+      <div class="card h-100 text-center card-hover shadow">
+        <div class="icon-circle">
+          <i class="bi ${service.icon} ${service.iconColor} fs-1"></i>
+        </div>
         <div class="card-body">
-          <h5 class="card-title text-white">${os.name}</h5>
-          ${os.versions.map(version => `<p class="card-text text-white">${version}</p>`).join('')}
+          <h5 class="card-title mt-5 text-black">${service.title}</h5>
+          <p class="card-text mt-3 text-black">${service.content}</p>
         </div>
       </div>
     </div>
   `;
 }
 
-// 3) Insert cards into the row
-const osCardsContainer = document.getElementById('os-cards');
-osData.forEach(os => {
-  osCardsContainer.innerHTML += createCard(os);
+// Insert generated cards into the container with id "dev-cards"
+const devCardsContainer = document.getElementById('dev-cards');
+devServices.forEach(service => {
+  devCardsContainer.innerHTML += createDevCard(service);
 });
+
+// Premium Hosting
+const premiumData = [
+  {
+    title: "Dedicated Support",
+    content:
+      "With our customer support staff, we provide dedicated communication channels for all managed services.",
+    icon: "bi-headset",
+    iconColor: "text-primary" // Primary color for dedicated support
+  },
+  {
+    title: "24/7 Monitored",
+    content:
+      "All Premium Web Hosting websites are monitored round-the-clock, ensuring immediate action on any issues.",
+    icon: "bi-clock-history",
+    iconColor: "text-info" // Info color works well for monitoring
+  },
+  {
+    title: "Fully Managed",
+    content:
+      "Our SysAdmin team manages all server & network configurations for your Premium Web Hosting services.",
+    icon: "bi-gear",
+    iconColor: "text-secondary" // Secondary color for management
+  },
+  {
+    title: "Auto Data Backup",
+    content:
+      "Your data is automatically backed up onto our secure cloud backup servers, keeping it safe and recoverable.",
+    icon: "bi-cloud-upload",
+    iconColor: "text-success" // Success color indicates reliability
+  },
+  {
+    title: "Flexible Pricing",
+    content:
+      "Our pricing adapts to your requirements and budget, offering cost-effective solutions for your hosting needs.",
+    icon: "bi-currency-dollar",
+    iconColor: "text-danger" // Danger color can indicate affordability challenges or urgency
+  },
+  {
+    title: "Service Level Agreement",
+    content:
+      "All Premium Web Hosting services include SLAs, guaranteeing reliable performance and uptime.",
+    icon: "bi-card-checklist",
+    iconColor: "text-warning" // Warning color works nicely for agreements
+  }
+];
+
+const freeData = [
+  {
+    title: "Free Domain",
+    content:
+      "Register a free domain (e.g., .com, .net) with every Dedicated Web Hosting package.",
+    icon: "bi-globe",
+    iconColor: "text-primary" // Primary color for global presence
+  },
+  {
+    title: "Free CMS Deployment",
+    content:
+      "We’ll install and configure popular CMS platforms like WordPress, Drupal, or Joomla at no extra cost.",
+    icon: "bi-file-earmark-text",
+    iconColor: "text-info" // Info color for documentation or text
+  },
+  {
+    title: "Free System Deployment",
+    content:
+      "Get your site up and running with our free system deployment and tuning on powerful Linux OS.",
+    icon: "bi-server",
+    iconColor: "text-secondary" // Secondary color for system services
+  },
+  {
+    title: "Free System Security",
+    content:
+      "We provide basic OS-level and cloud firewall security to keep your environment protected.",
+    icon: "bi-shield-lock",
+    iconColor: "text-success" // Success color to indicate security/safety
+  }
+];
+
+// Reusable function to build a card's HTML
+function createCard(item) {
+  return `
+    <div class="col gy-5">
+      <div class="card h-100 shadow card-hover">
+        <div class="icon-circle">
+          <i class="bi ${item.icon} ${item.iconColor} fs-1"></i>
+        </div>
+       <div class="card-body">
+        <h5 class="card-title mt-5">${item.title}</h5>
+        <p>${item.content}</p>
+       </div>
+      </div>
+    </div>
+  `;
+}
+
+// Insert Premium Services cards
+const premiumRow = document.getElementById("premium-row");
+premiumData.forEach((item) => {
+  premiumRow.innerHTML += createCard(item);
+});
+
+// Insert Free Items cards
+const freeRow = document.getElementById("free-row");
+freeData.forEach((item) => {
+  freeRow.innerHTML += createCard(item);
+});
+
+
+
+
+
+
+

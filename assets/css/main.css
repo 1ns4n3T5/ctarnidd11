@@ -2345,3 +2345,16 @@ section,
   background-repeat: repeat-y;
 
 }
+
+
+.bg-theme2{
+  background:linear-gradient(135deg, rgba(8, 121, 115, 0.7),rgba(119, 7, 22, 0.7)), 
+  url('../img/resize-bg.jpg');
+}
+
+.bg-theme3{
+  background:linear-gradient(135deg,rgba(119, 7, 22, 0.7), rgba(8, 121, 115, 0.7)), 
+  url('../img/resize-bg.jpg');
+  
+
+}
