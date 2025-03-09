@@ -44,3 +44,52 @@
   osData.forEach(os => {
     osCardsContainer.innerHTML += createCard(os);
   });
+
+
+  //CMS
+
+  // Data array for CMS VPS services
+const cmsData = [
+    {
+      title: "WordPress VPS",
+      content: "Ready-to-use WordPress CMS installed and configured on our cloud VPS by our professionals.",
+      icon: "bi-pencil-square",
+      iconColor: "text-primary"
+    },
+    {
+      title: "Drupal VPS",
+      content: "Ready-to-use Drupal CMS installed and configured on our cloud VPS by our professionals.",
+      icon: "bi-droplet",
+      iconColor: "text-danger"
+    },
+    {
+      title: "Joomla VPS",
+      content: "Ready-to-use Joomla CMS installed and configured on our cloud VPS by our professionals.",
+      icon: "bi-window",
+      iconColor: "text-warning"
+    }
+  ];
+  
+  // Function to create a CMS card's HTML
+  function createCMSCard(item) {
+    return `
+      <div class="col gy-5">
+        <div class="card text-center p-3 h-100 shadow card-hover">
+          <div class="icon-circle">
+            <i class="bi ${item.icon} ${item.iconColor} fs-1"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-black">${item.title}</h5>
+            <p class="card-text text-black">${item.content}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  // Insert CMS cards into the container
+  const cmsCardsContainer = document.getElementById('cms-cards');
+  cmsData.forEach(item => {
+    cmsCardsContainer.innerHTML += createCMSCard(item);
+  });
+  
