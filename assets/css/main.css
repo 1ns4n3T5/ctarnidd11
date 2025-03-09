@@ -773,7 +773,10 @@ section,
   justify-content: center;
   background:linear-gradient(135deg, rgba(8, 121, 115, 0.7),rgba(119, 7, 22, 0.7)), 
   url('../img/test2.jpg');
-
+    background-size: cover; /* Ensures the background covers the section */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center center; /* Centers the background */
+  
 
 }
 
@@ -2348,8 +2351,20 @@ section,
 
 
 .bg-theme2{
-  background:linear-gradient(135deg, rgba(8, 121, 115, 0.7),rgba(119, 7, 22, 0.7)), 
+  background: linear-gradient(135deg, rgba(8, 121, 115, 0.7), rgba(119, 7, 22, 0.7)), 
   url('../img/resize-bg.jpg');
+  background-size: cover; /* Ensures the background covers the section */
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-position: center center; /* Centers the background */
+
+
+}
+
+@media (max-width: 768px) {
+  .bg-theme2 {
+      background-attachment: scroll;
+      background-size: cover; /* Ensures it adjusts for smaller screens */
+  }
 }
 
 .bg-theme3{
